@@ -1,4 +1,4 @@
-package Bai3_Fan;
+package BaiTap.Bai3_Fan;
 
 import BaiTap.Bai3_Fan.Fan;
 
