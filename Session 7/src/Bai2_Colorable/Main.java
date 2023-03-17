@@ -2,26 +2,22 @@ package Bai2_Colorable;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("---SHAPE----");
-        Shape shape = new Shape();
-        System.out.println(shape);
-        shape = new Shape("green", true);
-        System.out.println(shape);
+        Shape circle = new Circle(2);
+        Shape retangle = new Retangular(3,4);
+        Shape square = new Square(2);
+        Shape[] shapes = {circle, retangle, square};
 
-        System.out.println("---CIRCLE----");
-        Circle circle = new Circle("red", true, 2.0);
-        System.out.println(circle);
+        System.out.println("Trước khi Color: ");
+        System.out.println("Hiển thị diện tích: ");
+        for (Shape shape : shapes) {
+            System.out.println(shape);
+        }
 
-        System.out.println("----RECTANGLE----");
-        Retangular retangular = new Retangular(3.0, 4.0, "black", false);
-        System.out.println(retangular);
-
-        System.out.println("-----SQUARE-----");
-        Square square = new Square(2.0,"brown",true);
-//        System.out.println(square);
-
-        square.howToColor();
-
-        System.out.println(square);
+        System.out.println("Sau khi Color: ");
+        for (Shape shape: shapes) {
+            if (shape instanceof Colorable) {
+                ((Colorable) shape).howToColor();
+            }
+        }
     }
 }

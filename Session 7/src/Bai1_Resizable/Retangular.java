@@ -55,6 +55,7 @@ public class Retangular extends Shape implements Resizable {
         return "Retangular{" +
                 "width=" + width +
                 ", height=" + height +
-                '}' + super.toString();
+                ", Area=" + getArea() +
+                '}' + " " + super.toString();
     }
 }

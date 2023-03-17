@@ -2,11 +2,16 @@ package navbar;
 
 import model.Student;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Navbar {
     public static void main(String[] args) {
+        Student[] studentArr = new Student[3];
+        studentArr[0] = new Student(1, "Nguyễn Văn A", 20);
+        studentArr[1] = new Student(2, "Nguyễn Thị B", 27);
+        studentArr[2] = new Student(3, "Nguyễn Thị C", 25);
         int input = 0;
         while (input != 6) {
             Scanner sc = new Scanner(System.in);
@@ -17,14 +22,11 @@ public class Navbar {
             System.out.println("4. Delete Student");
             System.out.println("5. Sort Student By Age ASC (Tăng Dần).");
             System.out.println("6. Exit");
-            Student[] studentArr = new Student[3];
-            studentArr[0] = new Student(1, "Nguyễn Văn A", 20);
-            studentArr[1] = new Student(2, "Nguyễn Thị B", 25);
-            studentArr[2] = new Student(3, "Nguyễn Thị C", 27);
             input = sc.nextInt();
             switch (input) {
                 case 1:
                     System.out.println("List Students: " + Arrays.toString(studentArr));
+
                     break;
                 case 2:
                     System.out.println("Nhập vào thông tin sinh viên: ");
@@ -35,24 +37,23 @@ public class Navbar {
                     System.out.println("Nhập vào tuổi sinh viên: ");
                     int studentAge = sc.nextInt();
                     Student newStudent = new Student(studentId, studentName, studentAge);
-
                     System.out.println("Học sinh vừa thêm mới: " + newStudent);
-                    System.out.println("Thêm mới học sinh thành công! : " + Arrays.toString(newStudentArr(newStudent, studentArr)));
+                    studentArr = newStudentArr(newStudent, studentArr);
                     break;
                 case 3:
+                    System.out.println(Arrays.toString(studentArr));
                     System.out.println("Lựa chọn id student muốn sửa: ");
                     int updateId = sc.nextInt();
-                    updateStudent(updateId, studentArr);
-                    System.out.println("Danh sách sau khi chỉnh sửa: " + Arrays.toString(studentArr));
+                    studentArr = updateStudent(updateId, studentArr);
                     break;
                 case 4:
+                    System.out.println(Arrays.toString(studentArr));
                     System.out.println("Lựa chọn id student muốn xoá: ");
                     int deleteId = sc.nextInt();
-                    System.out.println("Xoá học sinh khỏi danh sách thành công! : " + Arrays.toString(deleteStudent(deleteId, studentArr)));
+                    studentArr = deleteStudent(deleteId, studentArr);
                     break;
                 case 5:
-                    sortArrStudent(studentArr);
-                    System.out.println("Mảng mới sau khi sắp xếp: " + Arrays.toString(studentArr));
+                    studentArr = sortArrStudent(studentArr);
                     break;
                 case 6:
                     System.exit(0);
@@ -62,16 +63,15 @@ public class Navbar {
         }
     }
 
-
     public static Student[] newStudentArr(Student newStudent, Student[] studentArr) {
-        Student[] newStudentArr = new Student[studentArr.length + 1];
+        Student[] newArr = new Student[studentArr.length + 1];
         int j = 0;
-        newStudentArr[newStudentArr.length - 1] = newStudent;
+        newArr[newArr.length - 1] = newStudent;
         for (int i = 0; i < studentArr.length; i++) {
-            newStudentArr[j] = studentArr[i];
+            newArr[j] = studentArr[i];
             j++;
         }
-        return newStudentArr;
+        return newArr;
     }
 
     public static Student[] deleteStudent(int delId, Student[] studentArr) {
@@ -87,7 +87,7 @@ public class Navbar {
         return newArr;
     }
 
-    public static void updateStudent(int updateId, Student[] arr) {
+    public static Student[] updateStudent(int updateId, Student[] arr) {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < arr.length; i++) {
             if (arr[i].getStudentId() == updateId) {
@@ -95,13 +95,15 @@ public class Navbar {
                 String name = sc.nextLine();
                 arr[i].setStudentName(name);
                 System.out.println("Nhập vào tuổi mới");
-                int age = sc.nextInt();
+                int age = Integer.parseInt(sc.nextLine());
                 arr[i].setAge(age);
             }
         }
+        System.out.println("Update successfully");
+        return arr;
     }
 
-    public static void sortArrStudent(Student[] arr) {
+    public static Student[] sortArrStudent(Student[] arr) {
         Student temp;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
@@ -112,5 +114,7 @@ public class Navbar {
                 }
             }
         }
+        System.out.println("Đã sắp xếp thành công!");
+        return arr;
     }
 }

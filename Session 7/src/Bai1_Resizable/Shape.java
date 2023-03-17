@@ -1,6 +1,6 @@
 package Bai1_Resizable;
 
-public class Shape {
+public abstract class Shape {
     private String color = "green";
     private boolean filled = true;
 
@@ -9,6 +9,7 @@ public class Shape {
         this.filled = filled;
     }
 
+    abstract double getArea();
     public Shape() {
 
     }

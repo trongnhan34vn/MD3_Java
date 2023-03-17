@@ -31,7 +31,7 @@ public class Square extends Retangular implements Colorable {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Square: Inherit: "+ super.toString();
     }
 
     @Override

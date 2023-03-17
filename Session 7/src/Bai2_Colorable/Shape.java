@@ -1,6 +1,6 @@
 package Bai2_Colorable;
 
-public class Shape {
+public abstract class Shape {
     private String color = "green";
     private boolean filled = true;
 
@@ -8,6 +8,8 @@ public class Shape {
         this.color = color;
         this.filled = filled;
     }
+
+    abstract double getArea();
 
     public Shape() {
 
