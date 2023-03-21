@@ -1,8 +1,11 @@
 package service;
 
+import comparator.Comparator;
 import model.Students;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class StudentServiceIMPL implements IStudentService{
@@ -19,7 +22,25 @@ public class StudentServiceIMPL implements IStudentService{
 
     @Override
     public void save(Students students) {
-        listStudents.add(students);
+       boolean isExist = false;
+        for (Students student: listStudents) {
+            if (students.getId() == student.getId()) {
+                isExist = true;
+                break;
+            } else {
+                isExist = false;
+            }
+        }
+        if (isExist) {
+            for (Students student: listStudents) {
+                if (students.getId() == student.getId()) {
+                    student.setName(students.getName());
+                    student.setAge(students.getAge());
+                }
+            }
+        } else {
+            listStudents.add(students);
+        }
     }
 
     @Override
@@ -36,8 +57,25 @@ public class StudentServiceIMPL implements IStudentService{
     public void deleteById(int id) {
         for (int i = 0; i < listStudents.size(); i++) {
             if (listStudents.get(i).getId() == id) {
-                listStudents.remove(id);
+                listStudents.remove(listStudents.get(i));
             }
         }
+    }
+
+    public void detailById(int id) {
+        for (int i = 0; i < listStudents.size(); i++) {
+            if (listStudents.get(i).getId() == id) {
+                System.out.println("Id: " + listStudents.get(i).getId() + "\n" +
+                        "Name: " + listStudents.get(i).getName() + "\n" +"" +
+                        "Age: " + listStudents.get(i).getAge());
+            }
+        }
+    }
+
+    public List<Students> sortByName() {
+        List<Students> sortList = new ArrayList<Students>(listStudents);
+        Comparator comparator = new Comparator();
+        Collections.sort(sortList, comparator);
+        return sortList;
     }
 }
