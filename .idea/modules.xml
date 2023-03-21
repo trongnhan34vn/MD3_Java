@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bai Kiem trta/Bai Kiem trta.iml" filepath="$PROJECT_DIR$/Bai Kiem trta/Bai Kiem trta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HN_JV221128_NGUYEN_TRONG_NHAN/HN_JV221128_NGUYEN_TRONG_NHAN.iml" filepath="$PROJECT_DIR$/HN_JV221128_NGUYEN_TRONG_NHAN/HN_JV221128_NGUYEN_TRONG_NHAN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HN_JV221128_NGUYEN_TRONG_NHAN_baitap_nangcao/HN_JV221128_NGUYEN_TRONG_NHAN_baitap_nangcao.iml" filepath="$PROJECT_DIR$/HN_JV221128_NGUYEN_TRONG_NHAN_baitap_nangcao/HN_JV221128_NGUYEN_TRONG_NHAN_baitap_nangcao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HN_JV221128_NHAN_bainangcao/HN_JV221128_NHAN_bainangcao.iml" filepath="$PROJECT_DIR$/HN_JV221128_NHAN_bainangcao/HN_JV221128_NHAN_bainangcao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MD3_Java.iml" filepath="$PROJECT_DIR$/.idea/MD3_Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 1/Session 1.iml" filepath="$PROJECT_DIR$/Session 1/Session 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 10/Session 10.iml" filepath="$PROJECT_DIR$/Session 10/Session 10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 11/Session 11.iml" filepath="$PROJECT_DIR$/Session 11/Session 11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 2/Session 2.iml" filepath="$PROJECT_DIR$/Session 2/Session 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 3/Session 3.iml" filepath="$PROJECT_DIR$/Session 3/Session 3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 4/Session 4.iml" filepath="$PROJECT_DIR$/Session 4/Session 4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 5/Session 5.iml" filepath="$PROJECT_DIR$/Session 5/Session 5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 6/Session 6.iml" filepath="$PROJECT_DIR$/Session 6/Session 6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 7/Session 7.iml" filepath="$PROJECT_DIR$/Session 7/Session 7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 8/Session 8.iml" filepath="$PROJECT_DIR$/Session 8/Session 8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Session 9/Session 9.iml" filepath="$PROJECT_DIR$/Session 9/Session 9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+    </modules>
+  </component>
+</project>

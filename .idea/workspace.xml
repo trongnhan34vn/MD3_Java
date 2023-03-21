@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1302436f-3159-4d34-8b91-9fa4c4bec099" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Bai Kiem trta/Bai Kiem trta.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HN_JV221128_NGUYEN_TRONG_NHAN/HN_JV221128_NGUYEN_TRONG_NHAN.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HN_JV221128_NGUYEN_TRONG_NHAN_baitap_nangcao/HN_JV221128_NGUYEN_TRONG_NHAN_baitap_nangcao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HN_JV221128_NHAN_bainangcao/HN_JV221128_NHAN_bainangcao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session 10/Session 10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session 11/Session 11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session 2/Session 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session 3/Session 3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session 4/Session 4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session 5/Session 5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session 6/Session 6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session 7/Session 7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session 9/Session 9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2NKPS4cF6X2KTiWwILYfqmy3SCI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1302436f-3159-4d34-8b91-9fa4c4bec099" name="Changes" comment="" />
+      <created>1679409800392</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679409800392</updated>
+    </task>
+    <servers />
+  </component>
+</project>
