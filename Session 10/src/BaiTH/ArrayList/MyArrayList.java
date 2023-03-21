@@ -48,6 +48,19 @@ public class MyArrayList<E> {
         }
     }
 
+    public boolean contains(Object o) {
+        boolean isExist = false;
+        for (int i = 0; i < elements.length; i++) {
+            if (o.equals(elements[i])) {
+                isExist = true;
+                break;
+            } else {
+                isExist = false;
+            }
+        }
+        return isExist;
+    }
+
     public Object[] remove(int i) {
         for (int j = i; j < elements.length-1; j++) {
             elements[i] = elements[j + 1];
@@ -62,6 +75,22 @@ public class MyArrayList<E> {
             }
         }
         return -1;
+    }
+
+    public int size() {
+        int count = 0;
+        for (int i = 0; i < elements.length; i++) {
+            count ++;
+        }
+        return count;
+    }
+
+    public Object clone() {
+        Object[] newArr = new Object[elements.length];
+        for (int i = 0; i < elements.length; i++) {
+            newArr[i] = elements[i];
+        }
+        return Arrays.toString(newArr);
     }
 
     @Override
