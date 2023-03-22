@@ -123,7 +123,6 @@ public class MyLinkedList<E> {
             }
             temp = temp.next;
         }
-
         return newList;
     }
 

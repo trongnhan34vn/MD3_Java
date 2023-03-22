@@ -2,7 +2,7 @@ package BaiTap.Bai3;
 
 public class Test {
     public static void main(String[] args) {
-        Queue q = new Queue();
+        Solution q = new Solution();
         q.enqueue(1);
         q.enqueue(2);
         q.enqueue(3);
